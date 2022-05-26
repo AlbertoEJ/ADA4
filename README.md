@@ -291,3 +291,54 @@ help(guardar_grafo)
 [erdos31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/muchos_nodos/grafo_erdos_500_2500_KruskalI.png
 [erdos41]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/muchos_nodos/grafo_erdos_500_2500_Prim.png
 
+
+### Modelo de Babarasi de pocos nodos
+
+#### Generado
+![Grafo en Babarasi de pocos nodos][babarasi1]
+#### Calculado con KruskalD
+#### Peso MST 
+![MST total KruskalD][mstbabarasi1] 
+![Grafo calculado con pocos nodos KruskalD][babarasi2]
+#### Calculado con KruskalI
+#### Peso MST 
+![MST total KruskalI][mstbabarasi2] 
+![Grafo calculado con pocos nodos KruskalI][babarasi3]
+#### Calculado con Prim
+#### Peso MST 
+![MST total Prim][mstbabarasi3] 
+![Grafo calculado con pocos nodos Prim][babarasi4]
+
+[mstbabarasi1]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/pocos_nodos/babasari_30_kruskalD.jpg
+[mstbabarasi2]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/pocos_nodos/babasari_30_kruskalI.jpg
+[mstbabarasi3]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/pocos_nodos/babasari_30_prims.jpg
+[babarasi1]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/pocos_nodos/grafo_babarasi_30_10.png
+[babarasi2]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/pocos_nodos/grafo_babarasi_30_10_Kruskal_D.png
+[babarasi3]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/pocos_nodos/grafo_babarasi_30_10_Kruskal_I.png
+[babarasi4]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/pocos_nodos/grafo_babarasi_30_10_Prim.png
+
+### Modelo de Babarasi de muchos nodos
+
+#### Generado
+![Grafo en Babarasi de muchos nodos][babarasi11]
+#### Calculado con KruskalD
+#### Peso MST 
+![MST total KruskalD][mstbabarasi11] 
+![Grafo calculado con muchos nodos KruskalD][babarasi21]
+#### Calculado con KruskalI
+#### Peso MST 
+![MST total KruskalI][mstbabarasi21] 
+![Grafo calculado con muchos nodos KruskalI][babarasi31]
+#### Calculado con Prim
+#### Peso MST 
+![MST total Prim][mstbabarasi31] 
+![Grafo calculado con muchos nodos Prim][babarasi41]
+
+[mstbabarasi11]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/muchos_nodos/babarasi_500_kruskalD.jpg
+[mstbabarasi21]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/muchos_nodos/babarasi_500_kruskalI.jpg
+[mstbabarasi31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/muchos_nodos/babarasi_500_prims.jpg
+[babarasi11]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/muchos_nodos/grafo_babarasi_500_12.png
+[babarasi21]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/muchos_nodos/grafo_babarasi_500_12_KruskalD.png
+[babarasi31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/muchos_nodos/grafo_babarasi_500_12_KruskalI.png
+[babarasi41]: [https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/pocos_nodos/grafo_babarasi_30_10_Prim.png](https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/muchos_nodos/grafo_babarasi_500_12_Prim.png)
+
