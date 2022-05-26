@@ -16,7 +16,7 @@ def Prim(self):
 Los archivos que contiene la carpeta "Proyecto_04" son: 
 + nodo.py Archivo que contiene la clase que define a un nodo y sus métodos
 + arista.py Archivo que contiene la clase que define a una arista y sus métodos
-+ grafo.py y archivos para cada algoritmo. Archivos que contienen la clase que define a un grafo y sus métodos, además, contiene los algortimos descritos para el proyecto 1 y contiene los algoritmos DFS (recursivo e iterativo) y BFS, correspondientes al proyecto 02, así como Dijkstra para el proyecto03.
++ grafo.py y archivos para cada algoritmo. Archivos que contienen la clase que define a un grafo y sus métodos, además, contiene los algortimos descritos para el proyecto 1 y contiene los algoritmos DFS (recursivo e iterativo) y BFS, correspondientes al proyecto 02, así como Dijkstra para el proyecto03 y KruskaID, KruskalI y Prim para el proyecto 4.
 + main.py Archivo que contiene la generación y guardado de cada uno de los grafos, tanto los generados como los calculados.
 + grafo2dot.py Archivo que hace la conversión a lenguaje .dot
 + Carpeta archivos_gv_e_imagenes que contiene por subcarpetas los algortimos con sus correspondientes archivos .gv e imágenes
@@ -39,137 +39,255 @@ help(guardar_grafo)
 ## Resúmen del proyecto 4
 
 ### Modelo de malla de pocos nodos
+
 #### Generado
 ![Grafo en malla de pocos nodos][malla1]
-#### Calculado con Dijkstra
-![Grafo en malla calculado con pocos nodos][malla2]
+#### Calculado con KruskalD
+#### Peso MST 
+![MST total KruskalD][mstmalla1] 
+![Grafo en malla calculado con pocos nodos KruskalD][malla2]
+#### Calculado con KruskalI
+#### Peso MST 
+![MST total KruskalI][mstmalla2] 
+![Grafo en malla calculado con pocos nodos KruskalI][malla3]
+#### Calculado con Prim
+#### Peso MST 
+![MST total Prim][mstmalla3] 
+![Grafo en malla calculado con pocos nodos Prim][malla4]
 
-[malla1]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/Malla/Malla_3_3.png
-[malla2]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/Malla/Malla_3_3_Dijkstra.png
-
+[mstmalla1]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/malla/pocos_nodos/malla30_KruskalD.png
+[mstmalla2]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/malla/pocos_nodos/malla_30_kruskalI.png
+[mstmalla3]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/malla/pocos_nodos/malla_30_prims.png
+[malla1]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/malla/pocos_nodos/grafo_malla_30_nodos.png
+[malla2]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/malla/pocos_nodos/grafo_malla_30_nodos_KruskalD.png
+[malla3]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/malla/pocos_nodos/grafo_malla_30_nodos_KruskalI.png
+[malla4]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/malla/pocos_nodos/grafo_malla_30_nodos_Prim.png
 
 ### Modelo de malla de muchos nodos
-#### Generado
-![Grafo en malla de muchos nodos][malla100]
-#### Calculado con Dijkstra
-![Grafo en malla calculado con BFS][malla1002]
-
-
-[malla100]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/Malla/Malla_25_4.png
-[malla1002]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/Malla/Malla_25_4_Dijkstra.png
-
-
-### Modelo Erdos y Renyi de pocos nodos
 
 #### Generado
-![Grafo erdos renyi 30 nodos y 400 aristas][erdos1]
-#### Calculado con Dijkstra
-![Grafo erdos renyi calculado con Dijkstra][erdos2]
+![Grafo en malla de muchos nodos][malla11]
+#### Calculado con KruskalD
+#### Peso MST 
+![MST total KruskalD][mstmalla11] 
+![Grafo en malla calculado con muchos nodos KruskalD][malla21]
+#### Calculado con KruskalI
+#### Peso MST 
+![MST total KruskalI][mstmalla21] 
+![Grafo en malla calculado con muchos nodos KruskalI][malla31]
+#### Calculado con Prim
+#### Peso MST 
+![MST total Prim][mstmalla31] 
+![Grafo en malla calculado con muchos nodos Prim][malla41]
+
+[mstmalla11]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/malla/muchos_nodos/malla_500_kruskalD.jpg
+[mstmalla21]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/malla/muchos_nodos/malla_500_kruskalI.jpg
+[mstmalla31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/malla/muchos_nodos/malla_500_prims.jpg
+[malla11]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/malla/muchos_nodos/grafo_malla_500_nodos.png
+[malla21]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/malla/muchos_nodos/grafo_malla_500_nodos_KruskalD.png
+[malla31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/malla/muchos_nodos/grafo_malla_500_nodos_KruskalI.png
+[malla41]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/malla/muchos_nodos/grafo_malla_500_nodos_Prim.png
 
 
-[erdos1]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/ErdosRenyi/ErdosRenyi_20_30.png
-[erdos2]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/ErdosRenyi/ErdosRenyi_20_30_Dijkstra.png
-
-
-### Modelo Erdos y Renyi de muchos nodos
+### Modelo de gilbert de pocos nodos
 
 #### Generado
-![Grafo erdos renyi 100 nodos y 1500 aristas][erdos100]
-#### Calculado con Dijkstra
-![Grafo erdos renyi calculado con Dijkstra][erdos1002]
+![Grafo en malla de pocos nodos][gilbert1]
+#### Calculado con KruskalD
+#### Peso MST 
+![MST total KruskalD][mstgilbert1] 
+![Grafo calculado con pocos nodos KruskalD][gilbert2]
+#### Calculado con KruskalI
+#### Peso MST 
+![MST total KruskalI][mstgilbert2] 
+![Grafo calculado con pocos nodos KruskalI][gilbert3]
+#### Calculado con Prim
+#### Peso MST 
+![MST total Prim][mstgilbert3] 
+![Grafo calculado con pocos nodos Prim][gilbert4]
 
+[mstgilbert1]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/gilbert/pocos_nodos/gilbert_30_kruskalD.jpg
+[mstgilbert2]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/gilbert/pocos_nodos/gilbert_30_kruskalI.jpg
+[mstgilbert3]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/gilbert/pocos_nodos/gilbert_30_prims.jpg
+[gilbert1]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/gilbert/pocos_nodos/grafo_gilbert_30_05.png
+[gilbert2]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/gilbert/pocos_nodos/grafo_gilbert_30_05_KruskalD.png
+[gilbert3]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/gilbert/pocos_nodos/grafo_gilbert_30_05_KruskalI.png
+[gilbert4]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/gilbert/pocos_nodos/grafo_gilbert_30_05_Prim.png
 
-[erdos100]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/ErdosRenyi/ErdosRenyi_100_100.png
-[erdos1002]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/ErdosRenyi/ErdosRenyi_100_100_Dijkstra.png
+### Modelo de gilbert de muchos nodos
 
-
-### Modelo Gilbert pocos nodos
 #### Generado
-![Gilbert 30 nodos][gilbert1]
-#### Calculado con Dijkstra
-![Gilbert calculado con Dijkstra][gilbert2]
+![Grafo en malla de muchos nodos][gilbert11]
+#### Calculado con KruskalD
+#### Peso MST 
+![MST total KruskalD][mstgilbert11] 
+![Grafo calculado con muchos nodos KruskalD][gilbert21]
+#### Calculado con KruskalI
+#### Peso MST 
+![MST total KruskalI][mstgilbert21] 
+![Grafo calculado con muchos nodos KruskalI][gilbert31]
+#### Calculado con Prim
+#### Peso MST 
+![MST total Prim][mstgilbert31] 
+![Grafo calculado con muchos nodos Prim][gilbert41]
+
+[mstgilbert11]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/gilbert/muchos_nodos/gilbert_500_kruskalD.jpg
+[mstgilbert21]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/gilbert/muchos_nodos/gilbert_500_kruskalI.jpg
+[mstgilbert31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/gilbert/muchos_nodos/gilbert_500_prims.jpg
+[gilbert11]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/gilbert/muchos_nodos/grafo_gilbert_500_002.png
+[gilbert21]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/gilbert/muchos_nodos/grafo_gilbert_500_002_KruskalD.png
+[gilbert31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/gilbert/muchos_nodos/grafo_gilbert_500_002_KruskalI.png
+[gilbert41]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/gilbert/muchos_nodos/grafo_gilbert_500_002_Prim.png
 
 
-[gilbert1]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/Gilbert/Gilbert_30_10.png
-[gilbert2]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/Gilbert/Gilbert_30_10_Dijkstra.png
+### Modelo de mendes de pocos nodos
 
-
-### Modelo Gilbert de muchos nodos
 #### Generado
-![Gilbert 100 nodos][gilbert100]
-#### Calculado con Dijkstra
-![Gilbert calculado con Dijkstra][gilbert1002]
+![Grafo en mendes de pocos nodos][mendes1]
+#### Calculado con KruskalD
+#### Peso MST 
+![MST total KruskalD][mstmendes1] 
+![Grafo calculado con pocos nodos KruskalD][mendes2]
+#### Calculado con KruskalI
+#### Peso MST 
+![MST total KruskalI][mstmendes2] 
+![Grafo calculado con pocos nodos KruskalI][mendes3]
+#### Calculado con Prim
+#### Peso MST 
+![MST total Prim][mstmendes3] 
+![Grafo calculado con pocos nodos Prim][mendes4]
 
+[mstmendes1]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/mendes/pocos_nodos/mendes_30_kruskalD.jpg
+[mstmendes2]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/mendes/pocos_nodos/mendes_30_kruskalI.jpg
+[mstmendes3]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/mendes/pocos_nodos/mendes_30_prims.jpg
+[mendes1]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/mendes/pocos_nodos/grafo_dorogovtsev_mendes_30.png
+[mendes2]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/mendes/pocos_nodos/grafo_dorogovtsev_mendes_30_KruskalD.png
+[mendes3]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/mendes/pocos_nodos/grafo_dorogovtsev_mendes_30_KruskalI.png
+[mendes4]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/mendes/pocos_nodos/grafo_dorogovtsev_mendes_30_Prim.png
 
-[gilbert100]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/Gilbert/Gilbert_100_10.png
-[gilbert1002]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/Gilbert/Gilbert_100_10_Dijkstra.png
+### Modelo de mendes de muchos nodos
 
-
-
-### Modelo geográfico de pocos nodos
 #### Generado
-![geografico 30 nodos][geo1]
-#### Calculado con Dijkstra
-![geografico calculado con Dijkstra][geo2]
+![Grafo en mendes de muchos nodos][mendes11]
+#### Calculado con KruskalD
+#### Peso MST 
+![MST total KruskalD][mstmendes11] 
+![Grafo calculado con muchos nodos KruskalD][mendes21]
+#### Calculado con KruskalI
+#### Peso MST 
+![MST total KruskalI][mstmendes21] 
+![Grafo calculado con muchos nodos KruskalI][mendes31]
+#### Calculado con Prim
+#### Peso MST 
+![MST total Prim][mstmendes31] 
+![Grafo calculado con muchos nodos Prim][mendes41]
+
+[mstmendes11]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/mendes/muchos_nodos/mendes_500_kruskalD.jpg
+[mstmendes21]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/mendes/muchos_nodos/mendes_500_kruskalI.jpg
+[mstmendes31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/mendes/muchos_nodos/mendes_500_prims.jpg
+[mendes11]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/mendes/muchos_nodos/grafo_dorogovtsev_mendes_500.png
+[mendes21]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/mendes/muchos_nodos/grafo_dorogovtsev_mendes_500_KruskalD.png
+[mendes31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/mendes/muchos_nodos/grafo_dorogovtsev_mendes_500_KruskalI.png
+[mendes41]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/mendes/muchos_nodos/grafo_dorogovtsev_mendes_500_Prim.png
 
 
-[geo1]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/Geografico/Geografico_30_3.png
-[geo2]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/Geografico/Geografico_30_3_Dijkstra.png
+### Modelo de geografico de pocos nodos
 
-
-### Modelo geográfico de muchos nodos
 #### Generado
-![geografico 100 nodos][geo100]
-#### Calculado con Dijkstra
-![geografico calculado con Dijkstra][geo1002]
+![Grafo en geografico de pocos nodos][geografico1]
+#### Calculado con KruskalD
+#### Peso MST 
+![MST total KruskalD][mstgeografico1] 
+![Grafo calculado con pocos nodos KruskalD][geografico2]
+#### Calculado con KruskalI
+#### Peso MST 
+![MST total KruskalI][mstgeografico2] 
+![Grafo calculado con pocos nodos KruskalI][geografico3]
+#### Calculado con Prim
+#### Peso MST 
+![MST total Prim][mstgeografico3] 
+![Grafo calculado con pocos nodos Prim][geografico4]
 
+[mstgeografico1]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/pocos_nodos/geografico_30_kruskalD.jpg
+[mstgeografico2]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/pocos_nodos/geografico_30_kruskalI.jpg
+[mstgeografico3]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/pocos_nodos/geografico_30_prims.jpg
+[geografico1]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/pocos_nodos/grafo_geografico_30_05.png
+[geografico2]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/pocos_nodos/grafo_geografico_30_05_KruskalD.png
+[geografico3]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/pocos_nodos/grafo_geografico_30_05_KruskalI.png
+[geografico4]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/pocos_nodos/grafo_geografico_30_05_Prim.png 
 
-[geo100]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/Geografico/Geografico_100_3.png
-[geo1002]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/Geografico/Geografico_100_3_Dijkstra.png
+### Modelo de geografico de muchos nodos
 
-
-### Modelo Barabási-Albert de pocos nodos
 #### Generado
-![albert 30 nodos][albert1]
-#### Calculado con Dijkstra
-![albert calculado con Dijkstra][albert2]
+![Grafo en geografico de muchos nodos][geografico11]
+#### Calculado con KruskalD
+#### Peso MST 
+![MST total KruskalD][mstgeografico11] 
+![Grafo calculado con muchos nodos KruskalD][geografico21]
+#### Calculado con KruskalI
+#### Peso MST 
+![MST total KruskalI][mstgeografico21] 
+![Grafo calculado con muchos nodos KruskalI][geografico31]
+#### Calculado con Prim
+#### Peso MST 
+![MST total Prim][mstgeografico31] 
+![Grafo calculado con muchos nodos Prim][geografico41]
 
+[mstgeografico11]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/muchos_nodos/geografico_500_kruskalD.jpg
+[mstgeografico21]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/muchos_nodos/geografico_500_kruskalI.jpg
+[mstgeografico31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/muchos_nodos/geografico_500_prims.jpg
+[geografico11]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/muchos_nodos/grafo_geografico_500_01.png
+[geografico21]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/muchos_nodos/grafo_geografico_500_01_KruskalD.png
+[geografico31]: hhttps://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/muchos_nodos/grafo_geografico_500_01_KruskalI.png
+[geografico41]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/muchos_nodos/grafo_geografico_500_01_Prim.png
 
-[albert1]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/BabarasiAlbert/BarabasiAlbert_30_4.png
-[albert2]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/BabarasiAlbert/BarabasiAlbert_30_4_Dijkstra.png
+### Modelo de Erdos y Renyi de pocos nodos
 
-
-### Modelo Barabási-Albert de muchos nodos
 #### Generado
-![albert 100 nodos][albert100]
-#### Calculado con Dijkstra
-![albert calculado con Dijkstra][albert1002]
+![Grafo en Erdos y Renyi de pocos nodos][erdos1]
+#### Calculado con KruskalD
+#### Peso MST 
+![MST total KruskalD][msterdos1] 
+![Grafo calculado con pocos nodos KruskalD][erdos2]
+#### Calculado con KruskalI
+#### Peso MST 
+![MST total KruskalI][msterdos2] 
+![Grafo calculado con pocos nodos KruskalI][erdos3]
+#### Calculado con Prim
+#### Peso MST 
+![MST total Prim][msterdos3] 
+![Grafo calculado con pocos nodos Prim][erdos4]
 
+[msterdos1]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/pocos_nodos/erdos_30_kruskalD.jpg
+[msterdos2]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/pocos_nodos/erdos_30_kruskalI.jpg
+[msterdos3]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/pocos_nodos/erdos_30_prims.jpg
+[erdos1]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/pocos_nodos/grafo_erdos_30_200.png
+[erdos2]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/pocos_nodos/grafo_erdos_30_200_KruskalD.png
+[erdos3]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/pocos_nodos/grafo_erdos_30_200_KruskalI.png
+[erdos4]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/pocos_nodos/grafo_erdos_30_200_Prim.png
 
-[albert100]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/BabarasiAlbert/BarabasiAlbert_100_4.png
-[albert1002]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/BabarasiAlbert/BarabasiAlbert_100_4_Dijkstra.png
+### Modelo de Erdos y Renyi de muchos nodos
 
-
-
-### Modelo Dorogovtsev-Mendes de pocos nodos
 #### Generado
-![Dorogovtsev-Mendes 30 nodos][mendes1]
-#### Calculado con Dijkstra
-![Dorogovtsev-Mendes calculado con Dijkstra][mendes2]
+![Grafo en Erdos y Renyi de muchos nodos][erdos11]
+#### Calculado con KruskalD
+#### Peso MST 
+![MST total KruskalD][msterdos11] 
+![Grafo calculado con muchos nodos KruskalD][erdos21]
+#### Calculado con KruskalI
+#### Peso MST 
+![MST total KruskalI][msterdos21] 
+![Grafo calculado con muchos nodos KruskalI][erdos31]
+#### Calculado con Prim
+#### Peso MST 
+![MST total Prim][msterdos31] 
+![Grafo calculado con muchos nodos Prim][erdos41]
 
-
-[mendes1]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/DorogovtsevMendes/DorogovtsevMendes_30.png
-[mendes2]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/DorogovtsevMendes/DorogovtsevMendes_30_Dijkstra.png
-
-### Modelo Dorogovtsev-Mendes de muchos nodos
-#### Generado
-![Dorogovtsev-Mendes 100 nodos][mendes100]
-#### Calculado con Dijkstra
-![Dorogovtsev-Mendes calculado con Dijkstra][mendes1002]
-
-
-[mendes100]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/DorogovtsevMendes/DorogovtsevMendes_100.png
-[mendes1002]: https://github.com/AlbertoEJ/ADA3/blob/main/Proyecto03/gv/DorogovtsevMendes/DorogovtsevMendes_30_Dijkstra.png
-
-
+[msterdos11]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/muchos_nodos/erdos_500_kruskalD.jpg
+[msterdos21]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/muchos_nodos/erdos_500_kruskalI.jpg
+[msterdos31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/muchos_nodos/erdos_500_prims.jpg
+[erdos11]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/muchos_nodos/grafo_erdos_500_2500.png
+[erdos21]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/muchos_nodos/grafo_erdos_500_2500_KruskalD.png
+[erdos31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/muchos_nodos/grafo_erdos_500_2500_KruskalI.png
+[erdos41]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/erdos_renyi/muchos_nodos/grafo_erdos_500_2500_Prim.png
 
