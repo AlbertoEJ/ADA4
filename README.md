@@ -238,7 +238,7 @@ help(guardar_grafo)
 [mstgeografico31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/muchos_nodos/geografico_500_prims.jpg
 [geografico11]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/muchos_nodos/grafo_geografico_500_01.png
 [geografico21]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/muchos_nodos/grafo_geografico_500_01_KruskalD.png
-[geografico31]: hhttps://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/muchos_nodos/grafo_geografico_500_01_KruskalI.png
+[geografico31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/muchos_nodos/grafo_geografico_500_01_KruskalI.png
 [geografico41]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/geografico/muchos_nodos/grafo_geografico_500_01_Prim.png
 
 ### Modelo de Erdos y Renyi de pocos nodos
@@ -340,5 +340,5 @@ help(guardar_grafo)
 [babarasi11]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/muchos_nodos/grafo_babarasi_500_12.png
 [babarasi21]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/muchos_nodos/grafo_babarasi_500_12_KruskalD.png
 [babarasi31]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/muchos_nodos/grafo_babarasi_500_12_KruskalI.png
-[babarasi41]: [https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/pocos_nodos/grafo_babarasi_30_10_Prim.png](https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/muchos_nodos/grafo_babarasi_500_12_Prim.png)
+[babarasi41]: https://github.com/AlbertoEJ/ADA4/blob/main/Proyecto_04/archivos_gv_e_imagenes/babarasi/muchos_nodos/grafo_babarasi_500_12_Prim.png
 
